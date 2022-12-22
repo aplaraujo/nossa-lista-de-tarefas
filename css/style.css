@@ -1,3 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+
+:root {
+  --gradient-background: linear-gradient(45deg, #e67e22, #e74c3c);
+  --color-white: #ffffff;
+  --color-alizarin: #e74c3c;
+  --color-pomegranate: #c0392b;
+  --font-poppins: "Poppins", sans-serif;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  --border-radius-standard: 8px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-poppins);
+  width: 100%;
+  min-height: 100vh;
+  background: var(--gradient-background);
+  background-repeat: no-repeat;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  background-color: var(--color-pomegranate);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  border-radius: var(--border-radius-standard);
+  box-shadow: var(--shadow);
+}
+
+.search-task,
+.add-task {
+  background-color: var(--color-white);
+  padding: 1.5rem 8px;
+  box-sizing: border-box;
+  border-radius: var(--border-radius-standard);
+  box-shadow: var(--shadow);
+}
+
+.search-task input,
+.add-task input {
+  padding: 10px 0;
+  margin-bottom: 1.875rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-alizarin);
+}
+
+.search-task div,
+.add-task div {
+  position: relative;
+}
+
+.search-task div label,
+.add-task div label {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: var(--color-pomegranate);
+  transition: top 0.3s;
+}
+
+.search-task div input:focus ~ label,
+.add-task div input:focus ~ label {
+  top: -13px;
+}
+
+.add-task button {
+  cursor: pointer;
+  background-color: var(--color-pomegranate);
+  color: var(--color-white);
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.task {
+  background-color: var(--color-white);
+  margin: 10px 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius-standard);
+  box-shadow: var(--shadow);
+  color: var(--color-pomegranate);
+}
+
 .delete {
-    cursor: pointer;
+  cursor: pointer;
 }
