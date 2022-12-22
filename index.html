@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa Lista de Tarefas</title>
+  </head>
+  <body>
+    <section class="box">
+      <header>
+        <h1>Nossa Lista de Tarefas</h1>
+
+        <form class="search-task">
+          <div>
+            <input type="text" name="search" />
+            <label>Buscar Tarefa</label>
+          </div>
+        </form>
+      </header>
+
+      <ul class="task-container">
+        <li class="list-group-task task" data-task="Assistir Breaking Bad">
+          <span>Assistir Breaking Bad</span>
+          <img
+            class="delete"
+            src="https://img.icons8.com/ios-glyphs/30/e74c3c/delete.png"
+            data-delete="Assistir Breaking Bad"
+          />
+        </li>
+
+        <li class="list-group-task task" data-task="Planejar aulas">
+          <span>Planejar aulas</span>
+          <img
+            class="delete"
+            src="https://img.icons8.com/ios-glyphs/30/e74c3c/delete.png"
+            data-delete="Planejar aulas"
+          />
+        </li>
+
+        <li class="list-group-task task" data-task="Fazer exercícios">
+          <span>Fazer exercícios</span>
+          <img
+            class="delete"
+            src="https://img.icons8.com/ios-glyphs/30/e74c3c/delete.png"
+            data-delete="Fazer exercícios"
+          />
+        </li>
+      </ul>
+
+      <form class="add-task">
+        <div>
+          <input type="text" name="add" />
+          <label>Incluir Tarefa</label>
+        </div>
+        <button type="submit">Cadastrar tarefa</button>
+      </form>
+    </section>
+
+    <script src=""></script>
+  </body>
+</html>
