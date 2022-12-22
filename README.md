@@ -10,5 +10,5 @@ Feito com:
 - CSS
 - JS
 
-Codepen: https://codepen.io/aplaraujo/pen/YzvgOmG
-Netlify: https://nossa-lista-de-tarefas.netlify.app
+- Codepen: https://codepen.io/aplaraujo/pen/YzvgOmG
+- Netlify: https://nossa-lista-de-tarefas.netlify.app
